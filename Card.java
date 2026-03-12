@@ -1,0 +1,18 @@
+public class Card {
+
+    private Suit suit;
+    private Rank rank;
+
+    Card(Suit suit, Rank rank) {
+        this.suit = suit;
+        this.rank = rank;
+    }
+
+    public int getValue() {
+        return rank.getValue();
+    }
+
+    public String toString() {
+        return rank + " of " + suit;
+    }
+}
